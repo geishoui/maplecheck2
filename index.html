@@ -1,0 +1,158 @@
+<!--
+https://geishoui.github.io/maplecheck/
+-->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+	<meta charset="utf-8">
+	<title>メイプラー格付けチェック2020</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body style="font-family: 'Sawarabi Mincho'; background-color:rgb(247, 202, 88);">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 mx-auto">
+				<form method="POST" target="dummyIframe" name="kakudukeform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe37bHX-9kD9s74lfuNPjFE8g5RpdDwQnIF0VrCakTRqBpmow/formResponse">
+					
+					<div id="entry0">
+						<img src="img/title.jpg" width="100%" onclick="clickBtn0()">
+						<div class="row mx-auto">
+							<button type="button" id="btn0" class="btn btn-success col-md-12" onclick="clickBtn0()"  style="padding: 1em 0; font-size: 1.5em;">挑戦する</button>
+						</div>
+					</div>
+					
+					<div id="entry1" style="display: none;">
+						<h1>第1問目　楽器<span class="h3">難易度：★★★★★</span></h1>
+						<p class="desc">高級なクラリネットはどちらでしょう。<br>
+						一つはトライアにてメルで購入できる[練習用クラリネット]<br>
+						もう一つはメロットでのみ購入できる[アリアンクラシッククラリネット]です。</p>
+						<div class="row mx-auto" data-toggle="buttons">
+							<div class="btn btn-danger col-md-6" onclick="onChanged(1,'A')">
+								<video controls width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/1%E5%95%8F%E7%9B%AE/%E6%BC%94%E5%A5%8FA.mp4"></video>
+									<input type="radio" name="entry.1434554586" value="Aの楽器">Aの楽器</div>
+							<div class="btn btn-primary col-md-6" onclick="onChanged(1,'B')">
+								<video controls width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/1%E5%95%8F%E7%9B%AE/%E6%BC%94%E5%A5%8FB.mp4"></video>
+									<input type="radio" name="entry.1434554586" value="Bの楽器">Bの楽器</div>
+						</div>
+						<button type="button" id="btn1" class="btn btn-success" onclick="clickBtn(1)" disabled>解答する</button>
+					</div>
+					<div id="answer1" style="display: none;">
+						<h1>第1問の正解は・・・</h1>
+						<img style="width:100%;" src="img/A.jpg?raw=true">
+						<button type="button" class="btn btn-success" onclick="clickNext(1)" >次の問題へ</button>
+					</div>
+
+					<div id="entry2" style="display: none;">
+						<h1>第2問目　工芸<span class="h3">難易度：★★★★☆</span></h1>
+						<p class="desc">日頃の冒険の観察眼をチェックさせていただきます。<br>
+						より攻撃力の高い高級装備を選んでください。<br>
+						画像をクリックすると切り替わります</p class="desc">
+						<div class="row mx-auto" data-toggle="buttons">
+							<div class="btn btn-danger col-md-6" onclick="onChanged(2,'A')">
+								<img id="pict2a" style="width: 100%;" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/2%E5%95%8F%E7%9B%AE/buki_a01.jpg?raw=true">
+								<div class="row">
+									<div class="col-md-6"><img onclick="exchange('2a',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/2%E5%95%8F%E7%9B%AE/buki_a01.jpg?raw=true"></div>
+									<div class="col-md-6"><img onclick="exchange('2a',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/2%E5%95%8F%E7%9B%AE/buki_a02.jpg?raw=true"></div>
+								</div>
+								<input type="radio" name="entry.1478899101" value="Aの装備">Aの装備</div>
+							<div class="btn btn-primary col-md-6" onclick="onChanged(2,'B')">
+								<img id="pict2b" style="width: 100%;" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/2%E5%95%8F%E7%9B%AE/buki_b01.jpg?raw=true">
+								<div class="row">
+									<div class="col-md-6"><img onclick="exchange('2b',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/2%E5%95%8F%E7%9B%AE/buki_b01.jpg?raw=true"></div>
+									<div class="col-md-6"><img onclick="exchange('2b',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/2%E5%95%8F%E7%9B%AE/buki_b02.jpg?raw=true"></div>
+								</div>
+								<input type="radio" name="entry.1478899101" value="Bの装備">Bの装備</div>
+						</div>
+						<button type="button" id="btn2" class="btn btn-success" onclick="clickBtn(2)" disabled>解答する</button>
+					</div>
+					<div id="answer2" style="display: none;">
+						<h1>第2問の正解は・・・</h1>
+						<img style="width:100%;" src="img/B.jpg?raw=true">
+						<button type="button" class="btn btn-success" onclick="clickNext(2)" >次の問題へ</button>
+					</div>
+
+					<div id="entry3" style="display: none;">
+						<h1>第3問目　絵画<span class="h3">難易度：★★★☆☆</span></h1 class="desc">
+						<p class="desc">UKS観光協会のイメージロゴを作成していただきました。<br>
+							テーマは『神聖で美しい神宿る地』です。<br>
+							一つは有名UGC作家である<a target="_blank" href="https://twitter.com/kome_FF14">こめまる先生</a>の作品、<br>
+							もう一つはギルドメンバーの作品です。</p class="desc">
+						<div class="row mx-auto" data-toggle="buttons">
+							<div class="btn btn-danger col-md-6" onclick="onChanged(3,'A')">
+								<img style="width: 100%;" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/3%E5%95%8F%E7%9B%AE/20200106_1894.jpg?raw=true">
+									<input type="radio" name="entry.1785237351" value="Aのロゴ">Aのロゴ</div>
+							<div class="btn btn-primary col-md-6" onclick="onChanged(3,'B')">
+								<img style="width: 100%;" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/3%E5%95%8F%E7%9B%AE/20200106_1895.jpg?raw=true">
+									<input type="radio" name="entry.1785237351" value="Bのロゴ">Bのロゴ</div>
+						</div>
+						<button type="button" id="btn3" class="btn btn-success" onclick="clickBtn(3)" disabled>解答する</button>
+					</div>
+					<div id="answer3" style="display: none;">
+						<h1>第3問の正解は・・・</h1>
+						<img style="width:100%;" src="img/B.jpg?raw=true">
+						<button type="button" class="btn btn-success" onclick="clickNext(3)" >次の問題へ</button>
+					</div>
+
+					<div id="entry4" style="display: none;">
+						<h1>第4問目　建築<span class="h3">難易度：★★★☆☆</span></h1>
+						<p class="desc">『冬の家』をテーマに5*5マス建築を作成していただきました。<br>
+							一つは有名建築家である<a target="_blank" href="https://twitter.com/kuroenpitu01">黒えんぴつ様</a target="_blank">の作品、<br>
+							もう一つは戦闘メインのギルドメンバーの作品です。</p class="desc">
+						<div class="row mx-auto" data-toggle="buttons">
+							<div class="btn btn-danger col-md-6" onclick="onChanged(4,'A')">
+								<img id="pict4a" style="width: 100%;" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1896.jpg?raw=true">
+								<div class="row">
+									<div class="col-md-4"><img onclick="exchange('4a',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1896.jpg?raw=true"></div>
+									<div class="col-md-4"><img onclick="exchange('4a',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1897.jpg?raw=true"></div>
+									<div class="col-md-4"><img onclick="exchange('4a',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1898.jpg?raw=true"></div>
+								</div>
+								<input type="radio" name="entry.1120541978" value="Aの建築">Aの建築</div>
+							<div class="btn btn-primary col-md-6" onclick="onChanged(4,'B')">
+								<img id="pict4b" style="width: 100%;" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1899.jpg?raw=true">
+								<div class="row">
+									<div class="col-md-4"><img onclick="exchange('4b',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1899.jpg?raw=true"></div>
+									<div class="col-md-4"><img onclick="exchange('4b',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1900.jpg?raw=true"></div>
+									<div class="col-md-4"><img onclick="exchange('4b',this.src)" width="100%" src="%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1901.jpg?raw=true"></div>
+								</div>
+								<input type="radio" name="entry.1120541978" value="Bの建築">Bの建築</div>
+						</div>
+						<button type="button" id="btn4" class="btn btn-success" onclick="clickBtn(4)" disabled>解答する</button>
+					</div>
+					<div id="answer4" style="display: none;">
+						<h1>第4問の正解は・・・</h1>
+						<img style="width:100%;" src="img/A.jpg?raw=true">
+						<button type="button" class="btn btn-success" onclick="submitForm()" >☆結果発表☆</button>
+					</div>
+
+					<h1 id="heading_results" style="display: none;">☆結果発表☆</h1>
+					<img style="width: 100%; display: none;" id="rank0" src="img/rank0.jpg">
+					<img style="width: 100%; display: none;" id="rank1" src="img/rank1.jpg">
+					<img style="width: 100%; display: none;" id="rank2" src="img/rank2.jpg">
+					<img style="width: 100%; display: none;" id="rank3" src="img/rank3.jpg">
+					<img style="width: 100%; display: none;" id="rank4" src="img/rank4.jpg">
+				</form>
+
+				<iframe name="dummyIframe" style="display:none;"></iframe>
+				<div id="results" style="display: none;">
+					<p class="desc">あなたの格付けは<span id="rank_name"></span>でした！</p>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSe37bHX-9kD9s74lfuNPjFE8g5RpdDwQnIF0VrCakTRqBpmow/viewanalytics"><button class="btn btn-success col-md-12" style="padding: 1em 0; font-size: 1.5em;">正答率を見る</button></a>
+					<img style="width: 100%;" src="img/20200105_003140_16.jpg?raw=true">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	
+</body>
+</html>

@@ -7,7 +7,7 @@ https://geishoui.github.io/maplecheck/
 <head>
 
 	<meta charset="utf-8">
-	<title>メイプラー格付けチェック2020</title>
+	<title>メイプラー格付けチェック2020 春</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,7 +19,7 @@ https://geishoui.github.io/maplecheck/
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-10 mx-auto">
-				<form method="POST" target="dummyIframe" name="kakudukeform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe37bHX-9kD9s74lfuNPjFE8g5RpdDwQnIF0VrCakTRqBpmow/formResponse">
+				<form method="POST" target="dummyIframe" name="kakudukeform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfKnRnE-14EXLR4WbVnafwPQ2RCY3D2c4Xu8ZwiQHpOvxTAAg/formResponse">
 					
 					<div id="entry0">
 						<img src="img/title.jpg" width="100%" onclick="clickBtn0()">
@@ -29,17 +29,17 @@ https://geishoui.github.io/maplecheck/
 					</div>
 					
 					<div id="entry1" style="display: none;">
-						<h1>第1問目　楽器<span class="h3">難易度：★★★★★</span></h1>
-						<p class="desc">高級なクラリネットはどちらでしょう。<br>
-						一つはトライアにてメルで購入できる[練習用クラリネット]<br>
-						もう一つはメロットでのみ購入できる[アリアンクラシッククラリネット]です。</p>
+						<h1>第1問目　演奏</h1>
+						<p class="desc">プロの譜面製作者の演奏はどちらでしょう<br>
+						ひとつはサークルとして販売もされている<a href="https://twitter.com/YkawaT">Y川 様</a><br>
+						比べるのは、採譜歴3ヶ月の某さっとみん帝国の皇帝です。</p>
 						<div class="row mx-auto" data-toggle="buttons">
 							<div class="btn btn-danger col-md-6" onclick="onChanged(1,'A')">
-								<video controls width="100%" src="questions/no1/%E6%BC%94%E5%A5%8FA.mp4"></video>
-									<input type="radio" name="entry.1434554586" value="Aの楽器">Aの楽器</div>
+								<video controls width="100%" src="questions/no1/A.mp4"></video>
+									<input type="radio" name="entry.1434554586" value="Aの演奏">Aの演奏</div>
 							<div class="btn btn-primary col-md-6" onclick="onChanged(1,'B')">
-								<video controls width="100%" src="questions/no1/%E6%BC%94%E5%A5%8FB.mp4"></video>
-									<input type="radio" name="entry.1434554586" value="Bの楽器">Bの楽器</div>
+								<video controls width="100%" src="questions/no1/B.mp4"></video>
+									<input type="radio" name="entry.1434554586" value="Bの演奏">Bの演奏</div>
 						</div>
 						<button type="button" id="btn1" class="btn btn-success" onclick="clickBtn(1)" disabled>解答する</button>
 					</div>
@@ -50,25 +50,16 @@ https://geishoui.github.io/maplecheck/
 					</div>
 
 					<div id="entry2" style="display: none;">
-						<h1>第2問目　工芸<span class="h3">難易度：★★★★☆</span></h1>
+						<h1>第2問目　工芸</h1>
 						<p class="desc">日頃の冒険の観察眼をチェックさせていただきます。<br>
-						より攻撃力の高い高級装備を選んでください。<br>
-						画像をクリックすると切り替わります</p class="desc">
+						フィールドボスであるほうを選んでください</p class="desc">
 						<div class="row mx-auto" data-toggle="buttons">
 							<div class="btn btn-danger col-md-6" onclick="onChanged(2,'A')">
-								<img id="pict2a" style="width: 100%;" src="questions/no2/buki_a01.jpg?raw=true">
-								<div class="row">
-									<div class="col-md-6"><img onclick="exchange('2a',this.src)" width="100%" src="questions/no2/buki_a01.jpg?raw=true"></div>
-									<div class="col-md-6"><img onclick="exchange('2a',this.src)" width="100%" src="questions/no2/buki_a02.jpg?raw=true"></div>
-								</div>
-								<input type="radio" name="entry.1478899101" value="Aの装備">Aの装備</div>
+								<img id="pict2a" style="width: 100%;" src="questions/no2/A.jpg?raw=true">
+								<input type="radio" name="entry.1478899101" value="Aの記念品">Aの記念品</div>
 							<div class="btn btn-primary col-md-6" onclick="onChanged(2,'B')">
-								<img id="pict2b" style="width: 100%;" src="questions/no2/buki_b01.jpg?raw=true">
-								<div class="row">
-									<div class="col-md-6"><img onclick="exchange('2b',this.src)" width="100%" src="questions/no2/buki_b01.jpg?raw=true"></div>
-									<div class="col-md-6"><img onclick="exchange('2b',this.src)" width="100%" src="questions/no2/buki_b02.jpg?raw=true"></div>
-								</div>
-								<input type="radio" name="entry.1478899101" value="Bの装備">Bの装備</div>
+								<img id="pict2b" style="width: 100%;" src="questions/no2/B.jpg?raw=true">
+								<input type="radio" name="entry.1478899101" value="Bの記念品">Bの記念品</div>
 						</div>
 						<button type="button" id="btn2" class="btn btn-success" onclick="clickBtn(2)" disabled>解答する</button>
 					</div>
@@ -79,18 +70,27 @@ https://geishoui.github.io/maplecheck/
 					</div>
 
 					<div id="entry3" style="display: none;">
-						<h1>第3問目　絵画<span class="h3">難易度：★★★☆☆</span></h1 class="desc">
-						<p class="desc">UKS観光協会のイメージロゴを作成していただきました。<br>
-							テーマは『神聖で美しい神宿る地』です。<br>
-							一つは有名UGC作家である<a target="_blank" href="https://twitter.com/kome_FF14">こめまる先生</a>の作品、<br>
-							もう一つはギルドメンバーの作品です。</p class="desc">
+						<h1>第3問目　衣裳</h1 class="desc">
+						<p class="desc">『卒業式』をテーマにTシャツを作成していただきました。<br>
+							ひとつは『AYAMI FACTORY』にてUGC衣装販売をされていた<a href="https://twitter.com/shiroayami">綾海しろ 様</a>です<br>
+							もうひとつはUGC製作はほとんど行ったことが無いものの、素敵なメイプル２イラストを描いている<a href="https://twitter.com/submas_Raguel">ラグエル 様</a>です</p class="desc">
 						<div class="row mx-auto" data-toggle="buttons">
 							<div class="btn btn-danger col-md-6" onclick="onChanged(3,'A')">
-								<img style="width: 100%;" src="questions/no3/20200106_1894.jpg?raw=true">
-									<input type="radio" name="entry.1785237351" value="Aのロゴ">Aのロゴ</div>
+								<img id="pict3a" style="width: 100%;" src="questions/no3/AT1.jpg?raw=true">
+								<div class="row">
+									<div class="col-4"><img onclick="exchange('3a',this.src)" width="100%" src="questions/no3/AT1.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('3a',this.src)" width="100%" src="questions/no3/AT2.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('3a',this.src)" width="100%" src="questions/no3/AT3.jpg?raw=true"></div>
+								</div>
+								<input type="radio" name="entry.1785237351" value="Aの衣裳">Aの衣裳</div>
 							<div class="btn btn-primary col-md-6" onclick="onChanged(3,'B')">
-								<img style="width: 100%;" src="questions/no3/20200106_1895.jpg?raw=true">
-									<input type="radio" name="entry.1785237351" value="Bのロゴ">Bのロゴ</div>
+								<img id="pict3b" style="width: 100%;" src="questions/no3/BT1.jpg?raw=true">
+								<div class="row">
+									<div class="col-4"><img onclick="exchange('3b',this.src)" width="100%" src="questions/no3/BT1.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('3b',this.src)" width="100%" src="questions/no3/BT2.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('3b',this.src)" width="100%" src="questions/no3/BT3.jpg?raw=true"></div>
+								</div>
+								<input type="radio" name="entry.1785237351" value="Bの衣裳">Bの衣裳</div>
 						</div>
 						<button type="button" id="btn3" class="btn btn-success" onclick="clickBtn(3)" disabled>解答する</button>
 					</div>
@@ -101,25 +101,25 @@ https://geishoui.github.io/maplecheck/
 					</div>
 
 					<div id="entry4" style="display: none;">
-						<h1>第4問目　建築<span class="h3">難易度：★★★☆☆</span></h1>
-						<p class="desc">『冬の家』をテーマに5*5マス建築を作成していただきました。<br>
-							一つは有名建築家である<a target="_blank" href="https://twitter.com/kuroenpitu01">黒えんぴつ様</a target="_blank">の作品、<br>
+						<h1>第4問目　建築</h1>
+						<p class="desc">『夏』をテーマに5*5マス建築を作成していただきました。<br>
+							メイプル2ハウジングコンテスト2019冒険者賞の<a target="_blank" href="https://twitter.com/mayoneru_game">まよねーる 様</a target="_blank">の建築をお選びください。<br>
 							もう一つは戦闘メインのギルドメンバーの作品です。</p class="desc">
 						<div class="row mx-auto" data-toggle="buttons">
 							<div class="btn btn-danger col-md-6" onclick="onChanged(4,'A')">
-								<img id="pict4a" style="width: 100%;" src="questions/no4/20200106_1896.jpg?raw=true">
+								<img id="pict4a" style="width: 100%;" src="questions/no4/A1.jpg?raw=true">
 								<div class="row">
-									<div class="col-md-4"><img onclick="exchange('4a',this.src)" width="100%" src="questions/no4/20200106_1896.jpg?raw=true"></div>
-									<div class="col-md-4"><img onclick="exchange('4a',this.src)" width="100%" src="questions/no4/20200106_1897.jpg?raw=true"></div>
-									<div class="col-md-4"><img onclick="exchange('4a',this.src)" width="100%" src="questions/no4/20200106_1898.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('4a',this.src)" width="100%" src="questions/no4/A1.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('4a',this.src)" width="100%" src="questions/no4/A2.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('4a',this.src)" width="100%" src="questions/no4/A3.jpg?raw=true"></div>
 								</div>
 								<input type="radio" name="entry.1120541978" value="Aの建築">Aの建築</div>
 							<div class="btn btn-primary col-md-6" onclick="onChanged(4,'B')">
-								<img id="pict4b" style="width: 100%;" src="questions/no4/20200106_1899.jpg?raw=true">
+								<img id="pict4b" style="width: 100%;" src="questions/no4/B1.jpg?raw=true">
 								<div class="row">
-									<div class="col-md-4"><img onclick="exchange('4b',this.src)" width="100%" src="questions/no4/20200106_1899.jpg?raw=true"></div>
-									<div class="col-md-4"><img onclick="exchange('4b',this.src)" width="100%" src="questions/no4/20200106_1900.jpg?raw=true"></div>
-									<div class="col-md-4"><img onclick="exchange('4b',this.src)" width="100%" src="questions/no4/20200106_1901.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('4b',this.src)" width="100%" src="questions/no4/B1.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('4b',this.src)" width="100%" src="questions/no4/B2.jpg?raw=true"></div>
+									<div class="col-4"><img onclick="exchange('4b',this.src)" width="100%" src="questions/no4/B3.jpg?raw=true"></div>
 								</div>
 								<input type="radio" name="entry.1120541978" value="Bの建築">Bの建築</div>
 						</div>
@@ -127,7 +127,7 @@ https://geishoui.github.io/maplecheck/
 					</div>
 					<div id="answer4" style="display: none;">
 						<h1>第4問の正解は・・・</h1>
-						<img style="width:100%;" src="img/A.jpg?raw=true">
+						<img style="width:100%;" src="img/B.jpg?raw=true">
 						<button type="button" class="btn btn-success" onclick="submitForm()" >☆結果発表☆</button>
 					</div>
 
@@ -141,8 +141,8 @@ https://geishoui.github.io/maplecheck/
 
 				<iframe name="dummyIframe" style="display:none;"></iframe>
 				<div id="results" style="display: none;">
-					<p class="desc">あなたの格付けは<span id="rank_name"></span>でした！</p>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSe37bHX-9kD9s74lfuNPjFE8g5RpdDwQnIF0VrCakTRqBpmow/viewanalytics"><button class="btn btn-success col-md-12" style="padding: 1em 0; font-size: 1.5em;">正答率を見る</button></a>
+					<div class="desc">あなたの格付けは<p id="rank_name"></p>でした！</div>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfKnRnE-14EXLR4WbVnafwPQ2RCY3D2c4Xu8ZwiQHpOvxTAAg/viewanalytics"><button class="btn btn-success col-md-12" style="padding: 1em 0; font-size: 1.5em;">正答率を見る</button></a>
 					<img style="width: 100%;" src="img/20200105_003140_16.jpg?raw=true">
 				</div>
 			</div>

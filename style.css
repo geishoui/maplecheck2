@@ -46,7 +46,8 @@ button {
 .desc {
     padding:1em;
     border-radius: 0.5em;
-    background-color: #eee;
+    background-color: #fff;
+    text-align: center;
 }
 #results .desc, #rank_name {
     font-size: 1.5em;

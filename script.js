@@ -20,7 +20,7 @@ function onChanged(n,ab){
         } else { score3 = 0;}
     }
     if(n==4){
-        if(ab=='A'){ score4 = 1;
+        if(ab=='B'){ score4 = 1;
         } else { score4 = 0;}
     }
     score = score1 + score2 + score3 + score4;
